@@ -17,6 +17,7 @@ const tweetsRouter = require("./routes/api/tweets");
 const csrfRouter = require("./routes/api/csrf");
 
 const app = express();
+
 app.use(passport.initialize());
 app.use(logger("dev"));
 app.use(express.json());
